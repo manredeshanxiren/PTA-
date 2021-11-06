@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+double funpi(double e)
+{
+    int i = 1,n = 1;
+    double sum = 0, a = 0;
+  do {
+      a = 1.0 * n / i;
+      n = -n;
+      i += 2;
+      sum += a;
+     }
+      while(fabs(a) > e);
+    return sum * 4; 
+}
+int main ()
+{
+    double e;
+    scanf("%lf", &e);
+    printf("pi = %.6lf", funpi(e));
+    return 0;
+}

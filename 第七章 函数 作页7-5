@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main ()
+{
+    float x, y, a, b;
+    scanf("%f %f %f %f", &x, &y, &a, &b);
+    printf("addition of complex is %f+%fi\n", x + a, y + b);
+    printf("product of complex is %f+%fi", x * a - y * b, x * b + a * y);
+    return 0;
+}
